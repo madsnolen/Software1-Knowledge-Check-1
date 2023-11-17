@@ -56,10 +56,10 @@ namespace KnowledgeCheck1_Calculator
                     var multiplyNumber1 = Console.ReadLine();
                     var multiplyNumber2 = Console.ReadLine();
 
-                    if (double.TryParse(multiplyNumber1, out double mulNumOne) && double.TryParse(multiplyNumber2, out double mulNumTwo))
+                    if (int.TryParse(multiplyNumber1, out int mulNumOne) && int.TryParse(multiplyNumber2, out int mulNumTwo))
                     {
                         Console.Write($"{multiplyNumber1} * {multiplyNumber2} = ");
-                        Console.Write(calculator.Divide(mulNumOne, mulNumTwo));
+                        Console.Write(calculator.Multiply(mulNumOne, mulNumTwo));
                     }
                     else
                     {
